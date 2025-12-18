@@ -11,7 +11,7 @@ let b = 11;
 let sum = 0;
 
 while (b < 100) {
-    sum += i;
+    sum += b;
     b += 2;
 }
 
