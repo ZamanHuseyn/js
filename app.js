@@ -1,18 +1,13 @@
-let a = 100;
-while (a < 1000) {
-    console.log(a);
-    a += 10;
+let metn = prompt("Metni daxil edin");
+let number = false;
+for (let i= 0; i <metn.length; i++){
+  if (!isNaN(metn[i]) && metn[i]!== " "){
+    number = true
+    break;
+  }
 }
-
-
-
-
-let b = 11;
-let sum = 0;
-
-while (b < 100) {
-    sum += b;
-    b += 2;
+if (number){
+console.log("reqem var");
+}else{
+  console.log("reqem yoxdur");
 }
-
-console.log(sum);
