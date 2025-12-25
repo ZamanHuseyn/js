@@ -1,13 +1,12 @@
-let metn = prompt("Metni daxil edin");
-let number = false;
-for (let i= 0; i <metn.length; i++){
-  if (!isNaN(metn[i]) && metn[i]!== " "){
-    number = true
-    break;
+let arr = [2, 9, 4, 5, 1, 12];
+let narr = [];
+
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] < 5) {
+    narr.push(arr[i]);      
+  } else {
+    narr.unshift(arr[i]);  
   }
 }
-if (number){
-console.log("reqem var");
-}else{
-  console.log("reqem yoxdur");
-}
+
+console.log(narr);
