@@ -1,12 +1,9 @@
-let arr = [2, 9, 4, 5, 1, 12];
-let narr = [];
+let original = [1, 2, 3, 4, 5]
+let copy = [...original]
 
-for (let i = 0; i < arr.length; i++) {
-  if (arr[i] < 5) {
-    narr.push(arr[i]);      
-  } else {
-    narr.unshift(arr[i]);  
-  }
+for (let i = 0; i < copy.length; i++) {
+  copy[i] = copy[i] * 2;
 }
 
-console.log(narr);
+console.log(original);
+console.log(copy);
